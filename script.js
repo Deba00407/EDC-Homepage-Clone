@@ -16,16 +16,4 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 
-// $(document).ready(function() {
-//   var urls = ['hmc1.jpeg', 'hmc2.jpeg', 'hmc3.jpeg', 'team-audition.jpeg'];
-
-//   var cout = 1;
-//   $('body').css('background-image', 'url("' + urls[0] + '")');
-//   setInterval(function() {
-//     $('body').css('background-image', 'url("' + urls[cout] + '")');
-//     cout == urls.length-1 ? cout = 0 : cout++;
-//   }, 5000);
-
-// });
-
 
