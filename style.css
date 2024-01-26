@@ -49,10 +49,6 @@ li a h1:hover {
   animation: changeImage 40s infinite;
 }
 
-#my{
-  zoom: 50%;
-}
-
 @keyframes changeImage {
   0% {
     background-image: url("hmc1.jpeg");
@@ -172,6 +168,10 @@ div.Header-2 > h1 {
   animation-delay: 1.2s;
 }
 
+#my {
+  zoom: 50%;
+}
+
 @keyframes fade {
   from {
     margin-top: 0px;
@@ -207,6 +207,10 @@ div.transition-images-overlay {
   background-color: white;
 }
 
+.Part3 {
+  height: 70vh;
+}
+
 .Header-3,
 .Header-4 {
   display: inline-block;
@@ -218,13 +222,21 @@ div.transition-images-overlay {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.Header-4 {
+  top: 20px;
+}
+
 .imgs {
   display: block;
   background-size: cover;
   border: 5px solid gray;
 }
 
-div.logoST1 , div.logoST2, div.logoST3, div.logoST4, div.logoST5{
+div.logoST1,
+div.logoST2,
+div.logoST3,
+div.logoST4,
+div.logoST5 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,7 +247,10 @@ div.logoST1 , div.logoST2, div.logoST3, div.logoST4, div.logoST5{
   justify-content: center;
 }
 
-.ST1 , .ST2, .ST3, .ST4 .ST5{
+.ST1,
+.ST2,
+.ST3,
+.ST4 .ST5 {
   height: 100%;
   display: inline;
   padding: 10px;
@@ -245,7 +260,11 @@ div.logoST1 , div.logoST2, div.logoST3, div.logoST4, div.logoST5{
   margin: 0px;
 }
 
-.ST1 span.ST1-name, .ST2 span.ST2-name, .ST3 span.ST3-name, .ST4 span.ST4-name, .ST5 span.ST5-name{
+.ST1 span.ST1-name,
+.ST2 span.ST2-name,
+.ST3 span.ST3-name,
+.ST4 span.ST4-name,
+.ST5 span.ST5-name {
   justify-content: center;
   text-align: center;
   position: relative;
@@ -256,7 +275,11 @@ div.logoST1 , div.logoST2, div.logoST3, div.logoST4, div.logoST5{
   display: block;
 }
 
-.ST1 span.ST1-founders, .ST2 span.ST2-founders, .ST3 span.ST3-founders, .ST4 span.ST4-founders, .ST5 span.ST5-founders{
+.ST1 span.ST1-founders,
+.ST2 span.ST2-founders,
+.ST3 span.ST3-founders,
+.ST4 span.ST4-founders,
+.ST5 span.ST5-founders {
   text-align: center;
   position: relative;
   top: 210px;
@@ -266,7 +289,11 @@ div.logoST1 , div.logoST2, div.logoST3, div.logoST4, div.logoST5{
   display: block;
 }
 
-.ST1 span.ST1-description, .ST2 span.ST2-description, .ST3 span.ST3-description, .ST4 span.ST4-description, .ST5 span.ST5-description{
+.ST1 span.ST1-description,
+.ST2 span.ST2-description,
+.ST3 span.ST3-description,
+.ST4 span.ST4-description,
+.ST5 span.ST5-description {
   top: 230px;
   position: relative;
   display: block;
@@ -276,24 +303,25 @@ div.logoST1 , div.logoST2, div.logoST3, div.logoST4, div.logoST5{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
 
-div.Startups, div.Startup2{
+div.Startups,
+div.Startup2 {
   display: flex;
   width: 100%;
 }
 
-div.Part5{
+div.Part5 {
   top: 80vh;
   position: relative;
   display: flex;
@@ -305,6 +333,49 @@ div.Part5{
   background-position: center;
 }
 
-div.block3 ul li a h1:hover{
+div.block3 ul li a h1:hover {
   color: rgb(119, 119, 228);
+}
+
+.slideshow-container .slider {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  background-color: rgba(176, 196, 222, 0.1);
+  background-image: url(cr1.jpeg);
+  background-position: center;
+  background-size: 70vh 50vh;
+  background-repeat: no-repeat;
+  display: block;
+  animation: Slides 30s linear infinite;
+}
+
+@keyframes Slides {
+  0% {
+    background-image: url(cr1.jpeg);
+  }
+
+  15% {
+    background-image: url(cr2.jpeg);
+  }
+
+  30% {
+    background-image: url(cr3.jpeg);
+  }
+
+  45% {
+    background-image: url(cr4.jpeg);
+  }
+
+  60% {
+    background-image: url(cr5.jpeg);
+  }
+
+  75% {
+    background-image: url(cr6.jpeg);
+  }
+
+  100% {
+    background-image: url(cr1.jpeg);
+  }
 }
