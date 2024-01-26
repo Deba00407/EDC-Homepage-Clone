@@ -1,0 +1,306 @@
+html,
+body,
+.Part2 {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+div.Block {
+  float: left;
+  height: 100px;
+  width: 8px;
+  background-size: cover;
+  background-color: rgb(119, 119, 228);
+}
+
+div.Header {
+  background-color: transparent;
+  position: relative;
+  display: block;
+  padding: 20px;
+  width: auto;
+}
+
+div.Links {
+  display: inline-block;
+  margin-left: 51%;
+  margin-top: -100px;
+  position: absolute;
+}
+
+li {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  margin-top: -15px;
+}
+
+li a h1:hover {
+  color: rgb(119, 119, 228);
+}
+
+.image {
+  background-image: url(hmc1.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  animation: changeImage 40s infinite;
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url("hmc1.jpeg");
+  }
+
+  20% {
+    background-image: url("hmc2.jpeg");
+  }
+
+  40% {
+    background-image: url("hmc3.jpeg");
+  }
+
+  60% {
+    background-image: url("team-audition.jpg");
+  }
+
+  100% {
+    background-image: url("hmc1.jpeg");
+  }
+}
+
+div.Overlay {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+div.Contents-1 > div.Title > h1 {
+  color: white;
+  position: relative;
+  text-align: center;
+  margin-top: 450px;
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: fade-in 1s linear forwards;
+}
+
+div.Contents-1 > div.Subtitle > h5 {
+  color: white;
+  position: relative;
+  font-size: 50px;
+  color: white;
+  margin-left: 40%;
+  margin-top: -50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.Button {
+  display: inline-block;
+  background-color: rgb(119, 119, 228);
+  padding: 2px 100px 2px 100px;
+  border-radius: 20vh;
+  margin-left: 45%;
+  text-align: center;
+}
+
+div.Button > h2 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+div.Button:hover {
+  background-color: white;
+}
+
+div.Button:hover a h2 {
+  color: rgb(119, 119, 228);
+}
+
+@keyframes fade-in {
+  0% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+
+  50% {
+    margin-top: 250px;
+    opacity: 0.5;
+  }
+
+  100% {
+    margin-top: 450px;
+    opacity: 1;
+  }
+}
+
+div.imagePart2 {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("about-bg.jpeg");
+  position: relative;
+}
+
+div.Overlay-2 {
+  background-color: rgba(255, 255, 255, 0.95);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+div.Header-2 {
+  background-color: transparent;
+  background-size: 100vh;
+}
+
+div.Header-2 > h1 {
+  position: relative;
+  display: block;
+  margin-top: -1300px;
+  margin-left: 45%;
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: fade 1.2s;
+  animation-delay: 1.2s;
+}
+
+@keyframes fade {
+  from {
+    margin-top: 0px;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: -1300px;
+    opacity: 1;
+  }
+}
+
+svg {
+  background-size: cover;
+}
+svg:hover {
+  background-color: rgb(119, 119, 228);
+  color: white;
+  padding-left: 10px;
+}
+
+div.transition-images-overlay {
+  background-color: yellow;
+  background-size: cover;
+  height: 100vh;
+  display: block;
+}
+
+.Part3,
+.Part4 {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.Header-3,
+.Header-4 {
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  left: 42%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgs {
+  display: block;
+  background-size: cover;
+  border: 5px solid gray;
+}
+
+div.logoST1 , div.logoST2, div.logoST3, div.logoST4, div.logoST5{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  left: 40%;
+  top: 200px;
+  position: relative;
+  justify-content: center;
+}
+
+.ST1 , .ST2, .ST3, .ST4 .ST5{
+  height: 100%;
+  display: inline;
+  padding: 10px;
+  left: 50%;
+  width: fit-content;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ST1 span.ST1-name, .ST2 span.ST2-name, .ST3 span.ST3-name, .ST4 span.ST4-name, .ST5 span.ST5-name{
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  font-size: 40px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+.ST1 span.ST1-founders, .ST2 span.ST2-founders, .ST3 span.ST3-founders, .ST4 span.ST4-founders, .ST5 span.ST5-founders{
+  text-align: center;
+  position: relative;
+  top: 210px;
+  font-size: 30px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+.ST1 span.ST1-description, .ST2 span.ST2-description, .ST3 span.ST3-description, .ST4 span.ST4-description, .ST5 span.ST5-description{
+  top: 230px;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+div.Startups, div.Startup2{
+  display: flex;
+  width: 100%;
+}
+
+div.Part5{
+  top: 80vh;
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  height: 50vh;
+  background-color: #141414;
+  background-size: cover;
+  background-position: center;
+}
+
+div.block3 ul li a h1:hover{
+  color: rgb(119, 119, 228);
+}
